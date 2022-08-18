@@ -1,0 +1,9 @@
+{
+  "generator-teams": {
+    "promptValues": {
+      "developer": "Sanservices"
+    },
+    "libraryName": "apmbot",
+    "generator-version": "4.0.1"
+  }
+}
