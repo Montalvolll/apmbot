@@ -1,1 +1,1 @@
-web: node src\server\apmbotOutgoingWebhook\ApmbotOutgoingWebhook.ts
+worker: npm start

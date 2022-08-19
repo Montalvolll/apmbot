@@ -44,7 +44,7 @@ export class ApmbotOutgoingWebhook implements IOutgoingWebhook {
 
       if (msgHash === auth) {
         // Message was ok and verified
-        message.text = `Echo ${incoming.text}`;
+        message.text = `Echo: ${incoming.text}`;
       } else {
         // Message could not be verified
         message.text = "Error: message sender cannot be verified";
