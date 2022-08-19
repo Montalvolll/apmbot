@@ -3,7 +3,7 @@ import * as express from "express";
 import * as crypto from "crypto";
 import {
     OutgoingWebhookDeclaration,
-    IOutgoingWebhook,
+    IOutgoingWebhook
 } from "express-msteams-host";
 
 /**
@@ -26,8 +26,8 @@ export class ApmbotOutgoingWebhook implements IOutgoingWebhook {
         const incoming = req.body as builder.Activity;
 
         // create the response, any Teams compatible responses can be used
-        let message: Partial<builder.Activity> = {
-            type: builder.ActivityTypes.Message,
+        const message: Partial<builder.Activity> = {
+            type: builder.ActivityTypes.Message
         };
 
         const securityToken = process.env.SECURITY_TOKEN;
